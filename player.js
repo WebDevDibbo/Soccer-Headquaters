@@ -35,22 +35,24 @@ document.getElementById('select-btn-6').addEventListener('click',function(){
    alert("You cannot add more than five players");
    disableButton("select-btn-6");
 })
-// disable button
-function disableButton (btnId){
-    const button =  document.getElementById(btnId)
-    button.setAttribute('disabled',true);   
-}
 // calculate button
 document.getElementById("calculate-btn").addEventListener('click',function(){
 
-    const playerSalary = document.getElementById('player-salary-input');
-    const playerSalaryString = playerSalary.value;
-    const totalPlayerSalary = parseInt(playerSalaryString);
+    const playerSalary = getInputValueById('player-salary-input');
+    const playerExpense  = getTextValueById('player-expense');
 
-    const playerExpense = document.getElementById('player-expense');
-    const playerExpenseString = playerExpense.innerText;
-    const PlayerExpenseNumber = parseInt(playerExpense);
+    const totalPlayerExpense = playerSalary * 5;
+    setTextValueById('player-expense',totalPlayerExpense);
+})
+// calculate button for total
+document.getElementById('calculate-btn-total').addEventListener('click',function(){
 
-    const totalPlayerExpense = totalPlayerSalary * 5;
-    playerExpense.innerText = totalPlayerExpense;
+    const managerExpense = getInputValueById('manager-salary-input');
+    const coachExpense = getInputValueById('coach-salary-input');
+    const expense = getTextValueById('total-expense');
+    const playerExpense  = getTextValueById('player-expense');
+
+    const totalExpense = playerExpense + managerExpense + coachExpense;
+    setTextValueById('total-expense',totalExpense);
+
 })

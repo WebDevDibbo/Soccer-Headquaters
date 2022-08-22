@@ -108,7 +108,7 @@ section{
 .player-salary{
     font-size: 16px;
 }
-#player-salary-input{
+.input-style{
     width: 120px;
     background-color: #0D0D0D;
     text-align: center;
