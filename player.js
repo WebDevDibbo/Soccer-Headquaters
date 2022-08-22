@@ -35,8 +35,22 @@ document.getElementById('select-btn-6').addEventListener('click',function(){
    alert("You cannot add more than five players");
    disableButton("select-btn-6");
 })
+// disable button
 function disableButton (btnId){
     const button =  document.getElementById(btnId)
     button.setAttribute('disabled',true);   
 }
+// calculate button
+document.getElementById("calculate-btn").addEventListener('click',function(){
 
+    const playerSalary = document.getElementById('player-salary-input');
+    const playerSalaryString = playerSalary.value;
+    const totalPlayerSalary = parseInt(playerSalaryString);
+
+    const playerExpense = document.getElementById('player-expense');
+    const playerExpenseString = playerExpense.innerText;
+    const PlayerExpenseNumber = parseInt(playerExpense);
+
+    const totalPlayerExpense = totalPlayerSalary * 5;
+    playerExpense.innerText = totalPlayerExpense;
+})

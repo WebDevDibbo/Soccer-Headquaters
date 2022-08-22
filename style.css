@@ -111,6 +111,7 @@ section{
 #player-salary-input{
     width: 120px;
     background-color: #0D0D0D;
+    text-align: center;
     color: white;
     padding: 6px 0;
     outline: none;
