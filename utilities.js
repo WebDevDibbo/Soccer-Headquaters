@@ -3,8 +3,13 @@ function getInputValueById(inputId){
     const inputIdField = document.getElementById(inputId);
     const inputIdValueString = inputIdField.value;
     const inputIdValue = parseInt(inputIdValueString);
-    return inputIdValue;
-
+    if(isNaN(inputIdValue)){
+        alert('Please input a number');
+        inputIdField.value = '';
+    }
+    else{
+        return inputIdValue;
+    }
 }
 function getTextValueById(textId){
 
@@ -23,3 +28,4 @@ function disableButton (btnId){
     const button =  document.getElementById(btnId)
     button.setAttribute('disabled',true);   
 }
+
