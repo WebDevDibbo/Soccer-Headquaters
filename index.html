@@ -38,7 +38,7 @@
                         <img src="player images/messi-2.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title text-center text-white">Lionel Messi</h5>
-                            <button id="select-btn" class="btn w-100 mx-auto d-block btn-primary">Select</button>
+                            <button id="select-btn-1" class="btn w-100 mx-auto d-block btn-primary">Select</button>
                         </div>
                     </div>
                     <!-- card 2 -->
@@ -46,7 +46,7 @@
                         <img src="player images/neymar.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title text-center text-white">Neymar Jr</h5>
-                            <button id="select-btn" class="btn w-100 mx-auto d-block btn-primary">Select</button>
+                            <button id="select-btn-2" class="btn w-100 mx-auto d-block btn-primary">Select</button>
                         </div>
                     </div>
                     <!-- card 3 -->
@@ -54,7 +54,7 @@
                         <img src="player images/mbappe-2.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title text-center text-white">Kylian Mbappé</h5>
-                            <button id="select-btn" class="btn w-100 mx-auto d-block btn-primary">Select</button>
+                            <button id="select-btn-3" class="btn w-100 mx-auto d-block btn-primary">Select</button>
                         </div>
                     </div>
                     <!-- card 4 -->
@@ -62,7 +62,7 @@
                         <img src="player images/vitinha.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title text-center text-white">Vítor Machado</h5>
-                            <button id="select-btn" class="btn w-100 mx-auto d-block btn-primary">Select</button>
+                            <button id="select-btn-4" class="btn w-100 mx-auto d-block btn-primary">Select</button>
                         </div>
                     </div>
                     <!-- card 5 -->
@@ -70,7 +70,7 @@
                         <img src="player images/random-1.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title text-center text-white">Sergio Ramos</h5>
-                            <button id="select-btn" class="btn w-100 mx-auto d-block btn-primary">Select</button>
+                            <button id="select-btn-5" class="btn w-100 mx-auto d-block btn-primary">Select</button>
                         </div>
                     </div>
                     <!-- card 6 -->
@@ -78,7 +78,7 @@
                         <img src="player images/random-2.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title text-center text-white">Renato Sanches</h5>
-                            <button id="select-btn" class="btn w-100 mx-auto d-block btn-primary">Select</button>
+                            <button id="select-btn-6" class="btn w-100 mx-auto d-block btn-primary">Select</button>
                         </div>
                     </div>
 
@@ -86,13 +86,14 @@
                 <div class="right-select-card">
                     <div class="select-card">
                         <h2 class="select-title text-center">Selected - V</h2>
-                        <ol>
-                            <li class="player-name">Lioner Messi</li>
-                            <li class="player-name">Kylian Mbappé</li>
-                            <li class="player-name">Neymar Jr</li>
-                            <li class="player-name">Renato Sanches</li>
-                            <li class="player-name">Keylor Navas</li>
-                        </ol>
+                        <ul style="list-style:none;">
+                            <li id="player-messi" class="player-name"></li>
+                            <li id="player-neymar" class="player-name"></li>
+                            <li id="player-mbappe" class="player-name"></li>
+                            <li id="player-vitor" class="player-name"></li>
+                            <li id="player-ramos" class="player-name"></li>
+                            <li id="player" class="player-name"></li>
+                        </ul>
                     </div>
                     <div class="budget-card text-white">
                         <h2 class="select-title text-center">budget</h2>
@@ -127,6 +128,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
+
+    <script src="player.js"></script>
 </body>
 
 </html>
