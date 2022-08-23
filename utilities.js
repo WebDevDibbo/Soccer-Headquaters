@@ -6,6 +6,12 @@ function getInputValueById(inputId){
     if(isNaN(inputIdValue)){
         alert('Please input a number');
         inputIdField.value = '';
+        return 0;
+    }
+    else if(inputIdValue < 0){
+        alert('please input a positive number');
+        inputIdField.value = '';
+        return 0;
     }
     else{
         return inputIdValue;
