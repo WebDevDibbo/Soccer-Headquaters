@@ -4,7 +4,6 @@ for(let player of players){
     player.addEventListener('click',function(){
         
         let parentName = player.parentNode.children[0].innerText;
-        console.log(parentName);
         let listLength = document.getElementById('container-list').childElementCount;
         if(listLength == 5){
             alert('you can not add more than five players');
